@@ -246,6 +246,9 @@ h4 {
   }
 }
 @media (max-width: 768px) {
+  .img-right-bg {
+    display: none;
+  }
   .head-top-txt-min {
     font-family: "HelveticaNeueMedium", sans-serif;
     font-size: 1rem;

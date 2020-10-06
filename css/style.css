@@ -118,14 +118,37 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .head-top-txt-min {
+    font-family: "HelveticaNeueMedium", sans-serif;
+    font-size: 1rem;
+  }
+  .head-top-txt-min p {
+    color: #94ca2d;
+  }
+  .head-top-txt-min a {
+    color: #ffffff;
+    font-family: "HelveticaNeueBold", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
   .beeg-device-hide {
     display: flex;
   }
   .small-device-hide {
     display: none;
   }
+  .logo {
+    margin-top: 0.5rem;
+  }
+  .logo img {
+    height: 80%;
+  }
   .head-top {
     height: 95px;
+  }
+  .head-top-txt {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
   .head-content-dino {
     overflow: hidden;
@@ -146,6 +169,9 @@ body {
   }
 }
 @media (max-width: 485px) {
+  .head-content-h1 {
+    font-size: 1.6rem;
+  }
   .head-content-dino {
     right: -1rem;
     bottom: 3rem;
@@ -166,6 +192,22 @@ body {
   }
 }
 @media (max-width: 385px) {
+  .head-top-txt-min a {
+    font-size: 1rem;
+  }
+  .wrap-nowrap {
+    flex-wrap: nowrap;
+  }
+  .logo {
+    margin-top: 0.2rem;
+  }
+  .logo img {
+    height: 70%;
+  }
+  .head-top-txt {
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+  }
   .head-content-dino {
     right: -3rem;
     bottom: 3rem;

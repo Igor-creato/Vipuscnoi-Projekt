@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,9 +23,10 @@
     <header class="head">
       <div class="head-top">
         <div class="container h-100">
+          <!-- Отображение на компьютерах -->
           <div class="row align-items-center h-100 small-device-hide">
             <div class="col-lg-1 col-md-2">
-              <img src="./img/top/logo.png" alt="" />
+              <img class="logo" src="./img/top/logo.png" alt="" />
             </div>
             <div class="col-lg-5 col-md-6">
               <p class="head-top-txt">
@@ -38,23 +40,25 @@
               </div>
             </div>
           </div>
-
+          <!-- Отображение на мобильных -->
           <div class="row align-items-center h-100 beeg-device-hide">
             <div class="col-12">
-              <div class="row big-device-hide">
-                <div class="col-3">
+              <div
+                class="row big-device-hide justify-content-center wrap-nowrap"
+              >
+                <div class="col-auto logo">
                   <img src="./img/top/logo.png" alt="" />
                 </div>
-                <div class="col-9">
+                <div class="col-auto">
                   <p class="head-top-txt">
                     Производство и продажа VR очков.<br />Доставка по всей
                     России.
                   </p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-6"><a href="#">+79104551703 </a></div>
-                <div class="col-6"><p>Заказать звонок</p></div>
+              <div class="row justify-content-center head-top-txt-min">
+                <div class="col-auto"><a href="#">+79104551703 </a></div>
+                <div class="col-auto"><p>Заказать звонок</p></div>
               </div>
             </div>
           </div>

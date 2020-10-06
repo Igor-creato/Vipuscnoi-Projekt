@@ -248,6 +248,8 @@ h4 {
    }
 }
 
+
+
 .block-img-img {
 
    width: 100%;
@@ -319,6 +321,8 @@ h4 {
 }
 
 @media (max-width: 992px) {
+
+
    .what-small-img {
       width: 100%;
       margin-bottom: 1rem;
@@ -338,7 +342,25 @@ h4 {
    }
 }
 
+@media(min-width: 769px) {}
+
+.d-none-b-768 {
+   display: none;
+}
+
 @media (max-width: 768px) {
+   .d-none-b-768 {
+      display: block;
+   }
+
+   .block-icon {
+      margin-top: 2rem;
+   }
+
+   .d-none-768 {
+      display: none;
+   }
+
    .img-right-bg {
       display: none;
    }
@@ -404,6 +426,10 @@ h4 {
 }
 
 @media (max-width: 576px) {
+   .row-pad {
+      padding-top: 50px;
+   }
+
    .head-content {
       &-dino {
          right: -1rem;

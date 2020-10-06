@@ -31,6 +31,9 @@ body {
   padding: 0;
   font-size: 14px;
 }
+.no-wrapping {
+  white-space: nowrap;
+}
 .buttons {
   color: #ffffff;
   text-decoration: none;
@@ -43,6 +46,7 @@ body {
   font-family: "HelveticaNeueBold", sans-serif;
   transition: 0.5s;
   text-shadow: 0px 1px 2px rgba(87, 143, 34, 0.9);
+  font-size: 0.8rem;
 }
 .buttons:hover {
   text-decoration: none;
@@ -56,6 +60,18 @@ h2 {
   font-family: "HelveticaNeueBlack", sans-serif;
   font-size: 2rem;
 }
+h3 {
+  font-family: "HelveticaNeueMedium", sans-serif;
+  font-size: 1.2rem;
+}
+h4 {
+  font-family: "HelveticaNeueMedium", sans-serif;
+  font-size: 1.1rem;
+}
+.line-block {
+  width: 100%;
+  margin-bottom: -11px;
+}
 .head {
   background: #000000 url(../img/top/top-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -66,11 +82,6 @@ h2 {
 }
 .head-subtitle h2 {
   margin-bottom: 2rem;
-}
-.head-subtitle h3 {
-  font-family: "HelveticaNeueMedium", sans-serif;
-  font-size: 1.1rem;
-  white-space: nowrap;
 }
 .head-subtitle-cost {
   font-family: "HelveticaNeueMedium", sans-serif;
@@ -159,12 +170,43 @@ h2 {
   font-size: 0.8rem;
   white-space: nowrap;
 }
+.content-1 {
+  background-color: #fcfcf6;
+  color: #000000;
+}
+.content-1-bg {
+  position: relative;
+}
+.block-img-img {
+  width: 100%;
+}
+.row-pad {
+  padding-top: 100px;
+}
+.block-icon {
+  display: flex;
+}
+.block-icon-content {
+  max-width: 25rem;
+}
+.block-icon-img {
+  padding-right: 1rem;
+}
 .list {
   min-height: 9rem;
   margin-left: -1.3rem;
 }
-.list h3 {
+.list h4 {
   margin-left: 1.3rem;
+}
+.list-sm {
+  padding-left: 5rem;
+}
+.img-right-bg {
+  position: absolute;
+  display: inline-block;
+  right: -5rem;
+  bottom: 50%;
 }
 @media (max-width: 1200px) {
   .what-body img {
@@ -245,6 +287,9 @@ h2 {
     height: 25%;
   }
 }
+.list-sm {
+  padding-left: 15px;
+}
 @media (max-width: 576px) {
   .head-content-dino {
     right: -1rem;
@@ -268,6 +313,9 @@ h2 {
   }
 }
 @media (max-width: 432px) {
+  .choos {
+    font-size: 0.7rem;
+  }
   .head-content-dino {
     right: -3rem;
     bottom: 1rem;
@@ -278,6 +326,9 @@ h2 {
   }
 }
 @media (max-width: 385px) {
+  .choos {
+    font-size: 0.5rem;
+  }
   .head-top-txt-min a {
     font-size: 1rem;
   }

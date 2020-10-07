@@ -36,7 +36,8 @@
             <div class="col-lg-2 offset-lg-4 col-md-3 offset-md-1">
               <div class="head-top-txt-right">
                 <a href="#">+79104551703 </a>
-                <p>Заказать звонок</p>
+                <p class="popup-btn">Заказать звонок</p>
+                <!-- <button class="popup-btn">Заказать звонок</button> -->
               </div>
             </div>
           </div>
@@ -58,7 +59,9 @@
               </div>
               <div class="row justify-content-center head-top-txt-min">
                 <div class="col-auto"><a href="#">+79104551703 </a></div>
-                <div class="col-auto"><p>Заказать звонок</p></div>
+                <div class="col-auto">
+                  <p class="popup-btn">Заказать звонок</p>
+                </div>
               </div>
             </div>
           </div>
@@ -351,7 +354,52 @@
         </div>
       </div>
     </section>
+    <div class="popup">
+      <div class="popup-content">
+        <!-- <button class="popup-close"></button> -->
+        <i class="popup-close far fa-times-circle"></i>
+        <div class="form form-popup">
+          <h3>Введите ваши данные<br />и нажмите заказать</h3>
+          <form action="" class="form-main">
+            <!-- <label for="">Введите имя</label> -->
+            <input
+              type="text"
+              class="form-main-input"
+              placeholder="Введите имя"
+            />
+            <!-- <label for="">Введите телефон</label> -->
+            <input
+              type="text"
+              class="form-main-input"
+              placeholder="Введите телефон"
+            />
 
+            <!-- Выпадающий список -->
+            <div class="select">
+              <input class="select__input" type="hidden" name="" />
+              <div class="select__head">Выберите очки</div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">С Bluetooch пультом</li>
+                <li class="select__item">Без пульта</li>
+              </ul>
+            </div>
+            <!-- Выпадающий список -->
+            <!-- <div class="select">
+              <select class="box">
+                <option class="select-item" selected>
+                  С Bluetooch пультом
+                </option>
+                <option class="select-item">Без пульта</option>
+              </select>
+            </div> -->
+            <a href="#" class="buttons form-main-buttons no-wrapping"
+              >Заказать vr box 2</a
+            >
+            <small>Перезвоним в течение 10 минут</small>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

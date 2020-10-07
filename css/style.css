@@ -36,6 +36,12 @@ body {
 .no-wrapping {
   white-space: nowrap;
 }
+.p-t-flex {
+  padding: 10px;
+}
+.no-wrapp-flex {
+  flex-wrap: nowrap;
+}
 .buttons {
   color: #ffffff;
   text-decoration: none;
@@ -72,6 +78,77 @@ h4 {
 }
 ul {
   list-style-image: url(../img/complect/li.png);
+}
+input[type~="text"],
+input[type~="password"],
+input[type~="select"],
+textarea {
+  font-size: 14px;
+  font-family: "HelveticaNeueRoman", sans-serif;
+}
+.form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 395px;
+  min-width: 295px;
+  border: 2px solid #18a7d0;
+  border-radius: 3px;
+  padding: 35px 65px;
+  text-align: center;
+  background-color: #000000;
+}
+.form input {
+  margin-top: 1rem;
+  width: 100%;
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  outline: none;
+}
+.form input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.form input:focus::placeholder {
+  opacity: 0;
+}
+.form ::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.form ::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.form-main-buttons {
+  display: block;
+}
+.block-order {
+  position: relative;
+  display: inline-block;
+  background-color: #18a7d0;
+  padding: 10px 20px;
+  height: 70px;
+}
+.block-order p {
+  margin-bottom: 0;
+}
+.block-order::after {
+  content: '';
+  border: 34px solid transparent;
+  border-left: 10px solid #18a7d0;
+  position: absolute;
+  right: -44px;
+  top: 0;
 }
 .line-block {
   width: 100%;
@@ -347,6 +424,18 @@ ul {
   }
 }
 @media (max-width: 432px) {
+  .block-order {
+    height: 100px;
+  }
+  .block-order::after {
+    content: '';
+    border: 50px solid transparent;
+    border-left: 10px solid #18a7d0;
+    right: -60px;
+  }
+  .no-wrapp-flex {
+    flex-wrap: wrap;
+  }
   .choos {
     font-size: 0.7rem;
   }
@@ -386,5 +475,8 @@ ul {
   }
   .head-content-glasses {
     height: 12%;
+  }
+  .form {
+    padding: 35px 40px;
   }
 }

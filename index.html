@@ -209,7 +209,7 @@
     </section>
     <section class="content-1">
       <div class="container content-1-bg">
-        <div class="row row-pad">
+        <div class="row row-pad row-pad-bot">
           <div class="col-md-6">
             <div class="block-img d-none-768">
               <img
@@ -279,16 +279,18 @@
     <section class="content-2">
       <div class="container">
         <div class="row">
-          <div class="col row-pad row-pad-bot">
+          <div class="col-md-12 col-lg-6 row-pad row-pad-bot">
             <h2>
               Закажите <span class="no-wrapping">VR BOX II</span><br />прямо
               сейчас
             </h2>
-            <p>
-              Только мы сотрудничаем с производителем<br />и осуществляем прямые
-              поставки с производства
-            </p>
-            <div class="row">
+            <div class="block-order">
+              <p>
+                Только мы сотрудничаем с производителем<br />и осуществляем
+                прямые поставки с производства
+              </p>
+            </div>
+            <div class="row no-wrapp-flex p-t-flex">
               <div class="col">
                 <div class="block-icon">
                   <div class="block-icon-img">
@@ -296,8 +298,10 @@
                   </div>
                   <div class="block-icon-content">
                     <h3>
-                      Принимаем заявки<br />24 часа в сутки!<br />7 дней в
-                      неделю!
+                      <span class="no-wrapping">Принимаем заявки</span
+                      ><br /><span class="no-wrapping">24 часа в сутки!</span
+                      ><br />
+                      <span class="no-wrapping">7 дней в неделю!</span>
                     </h3>
                   </div>
                 </div>
@@ -308,18 +312,46 @@
                     <img src="./img/content-2/bag-icon.png" alt="" />
                   </div>
                   <div class="block-icon-content">
-                    <h3>Быстрая доставка и<br />оплата при получении</h3>
+                    <h3>
+                      <span class="no-wrapping">Быстрая доставка и</span
+                      ><br /><span class="no-wrapping"
+                        >оплата при получении</span
+                      >
+                    </h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <form action=""></form>
+          <div
+            class="col-12 offset-0 col-sm-12 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1"
+          >
+            <div class="form">
+              <h3>Введите ваши данные<br />и нажмите заказать</h3>
+              <form action="" class="form-main">
+                <!-- <label for="">Введите имя</label> -->
+                <input
+                  type="text"
+                  class="form-main-input"
+                  placeholder="Введите имя"
+                />
+                <!-- <label for="">Введите телефон</label> -->
+                <input
+                  type="text"
+                  class="form-main-input"
+                  placeholder="Введите телефон"
+                />
+                <a href="#" class="buttons form-main-buttons no-wrapping"
+                  >Заказать vr box 2</a
+                >
+                <small>Перезвоним в течение 10 минут</small>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>

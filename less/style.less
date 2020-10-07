@@ -70,6 +70,14 @@ body {
    white-space: nowrap;
 }
 
+.p-t-flex {
+   padding: 10px;
+}
+
+.no-wrapp-flex {
+   flex-wrap: nowrap;
+}
+
 .buttons {
    color: @white;
    text-decoration: none;
@@ -112,6 +120,75 @@ h4 {
 
 ul {
    list-style-image: url(../img/complect/li.png);
+}
+
+input[type~="text"],
+input[type~="password"],
+input[type~="select"],
+textarea {
+   font-size: 14px;
+   .roman();
+}
+
+.form {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   max-width: 395px;
+   min-width: 295px;
+   border: 2px solid @icon-color;
+   border-radius: 3px;
+   padding: 35px 65px;
+   text-align: center;
+   background-color: @black;
+
+   input {
+      margin-top: 1rem;
+      width: 100%;
+      display: block;
+      background-color: @black;
+      color: @white;
+      padding: 1rem 1rem;
+      border: 2px solid @white;
+      border-radius: 3px;
+      outline: none;
+
+      &:focus::placeholder {
+         opacity: 0;
+      }
+   }
+
+
+   ::placeholder {
+      color: @white;
+      opacity: 1;
+   }
+
+   &-main {
+      &-buttons {
+         display: block;
+      }
+   }
+}
+
+.block-order {
+   position: relative;
+   display: inline-block;
+   background-color: @icon-color;
+   padding: 10px 20px;
+   height: 70px;
+
+   p {
+      margin-bottom: 0;
+   }
+
+   &::after {
+      content: '';
+      border: 34px solid transparent;
+      border-left: 10px solid @icon-color;
+      position: absolute;
+      right: -44px;
+      top: 0;
+   }
 }
 
 .line-block {
@@ -464,6 +541,8 @@ ul {
 }
 
 @media (max-width: 485px) {
+
+
    .head-content-h1 {
       font-size: 1.6rem;
    }
@@ -482,6 +561,22 @@ ul {
 }
 
 @media (max-width: 432px) {
+   .block-order {
+      height: 100px;
+
+      &::after {
+         content: '';
+         border: 50px solid transparent;
+         border-left: 10px solid @icon-color;
+         right: -60px;
+
+      }
+   }
+
+   .no-wrapp-flex {
+      flex-wrap: wrap;
+   }
+
    .choos {
       font-size: 0.7rem;
    }
@@ -538,4 +633,9 @@ ul {
          height: 12%;
       }
    }
+
+   .form {
+      padding: 35px 40px;
+   }
+
 }

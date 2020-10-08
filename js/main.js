@@ -9,14 +9,20 @@ $(document).ready(function () {
   });
 });
 // paralax
-      var rellax = new Rellax(".rellax");
+var rellax = new Rellax(".rellax");
 // paralax
 // popup youtube
-$(".popup-youtube-video").grtyoutube({ autoPlay:true });
+$(".popup-youtube-video").grtyoutube({
+  autoPlay: true
+});
 // popup youtube
 // paralax bg
-$('.parallax-window').parallax({imageSrc: '../img/top/top-bg.jpg'});
-$('.parallax-window-2').parallax({imageSrc: '../img/content-2/bg.jpg'});
+$('.parallax-window').parallax({
+  imageSrc: './img/top/top-bg.jpg'
+});
+$('.parallax-window-2').parallax({
+  imageSrc: './img/content-2/bg.jpg'
+});
 // paralax bg
 
 

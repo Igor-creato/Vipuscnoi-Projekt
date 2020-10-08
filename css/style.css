@@ -345,7 +345,7 @@ textarea {
 }
 .content-4 {
   position: relative;
-  background: #fcfcf6 url(../img/content-4/bg.png) top center no-repeat;
+  background: #fcfcf6 url(../img/content-4/bg.png) top right no-repeat;
   background-size: 100%;
   color: #000000;
   text-align: center;

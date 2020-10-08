@@ -341,6 +341,73 @@ textarea {
 .content-2 h3 {
   font-size: 1rem;
 }
+.content-4 {
+  position: relative;
+  background: #fcfcf6 url(../img/content-4/bg.png) top center no-repeat;
+  background-size: 100%;
+  color: #000000;
+  text-align: center;
+}
+.content-4-h2:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #18a7d0;
+  margin: auto;
+  margin-top: 8px;
+}
+.content-4-items {
+  margin-top: 50px;
+}
+.content-4-items-img {
+  margin-bottom: 20px;
+}
+.content-5 {
+  background-color: #fcfcf6;
+}
+.content-5-img-glasses {
+  width: 100%;
+}
+.content-5-img-phone {
+  padding: 10px;
+}
+.content-5-txt {
+  font-family: "HelveticaNeueMedium", sans-serif;
+  font-size: 17px;
+}
+.content-6 {
+  background: #000000 url(../img/content-6/bg.png) center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+.circle-border {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+  border: 3px solid #18a7d0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  font-family: "ProximaNova_bold", sans-serif;
+  font-size: 1.5rem;
+  font-family: "HelveticaNeueBold", sans-serif;
+}
+.circle {
+  display: inline-block;
+  background-color: #18a7d0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.number {
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
 .block-img-img {
   z-index: 4;
   width: 100%;
@@ -396,6 +463,11 @@ textarea {
   position: absolute;
   right: 2rem;
   top: 400px;
+}
+.position-big-rubin {
+  position: absolute;
+  right: -1rem;
+  bottom: -500px;
 }
 .content-1 {
   position: relative;

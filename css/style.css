@@ -143,7 +143,7 @@ textarea {
   right: 20px;
   bottom: 50%;
   transform: translateY(50%);
-  content: '';
+  content: "";
   display: block;
   transition: 0.2s ease-in;
 }
@@ -214,7 +214,7 @@ textarea {
   margin-bottom: 0;
 }
 .block-order::after {
-  content: '';
+  content: "";
   border: 34px solid transparent;
   border-left: 10px solid #18a7d0;
   position: absolute;
@@ -314,6 +314,9 @@ textarea {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.what-small-img {
+  width: 100%;
+}
 .what-small-text {
   font-family: "HelveticaNeueRoman", sans-serif;
   font-size: 0.8rem;
@@ -339,7 +342,9 @@ textarea {
   font-size: 1rem;
 }
 .block-img-img {
+  z-index: 4;
   width: 100%;
+  position: relative;
 }
 .row-pad {
   padding-top: 100px;
@@ -366,11 +371,37 @@ textarea {
 .list-sm {
   padding-left: 5rem;
 }
-.img-right-bg {
+.position-small-rubin {
   position: absolute;
   display: inline-block;
-  right: -5rem;
-  bottom: 50%;
+  right: -3rem;
+  bottom: 10%;
+}
+.position-small-isumrud {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  left: 6rem;
+  bottom: -10px;
+}
+.position-big-isumrud {
+  z-index: 10;
+  position: absolute;
+  display: inline-block;
+  left: 4rem;
+  bottom: -40;
+}
+.position-topaz {
+  z-index: 10;
+  position: absolute;
+  right: 2rem;
+  top: 400px;
+}
+.content-1 {
+  position: relative;
+}
+.content-3 {
+  position: relative;
 }
 .popup {
   display: none;
@@ -435,9 +466,17 @@ textarea {
   }
 }
 @media (max-width: 992px) {
-  .what-small-img {
-    width: 100%;
-    margin-bottom: 1rem;
+  .position-small-rubin {
+    display: none;
+  }
+  .position-small-isumrud {
+    display: none;
+  }
+  .position-big-isumrud {
+    display: none;
+  }
+  .position-topaz {
+    display: none;
   }
   .d-none-992 {
     display: none;
@@ -454,6 +493,10 @@ textarea {
   display: none;
 }
 @media (max-width: 768px) {
+  .position-small-isumrud,
+  .position-small-rubin {
+    display: none;
+  }
   .d-none-b-768 {
     display: block;
   }
@@ -540,7 +583,7 @@ textarea {
     height: 100px;
   }
   .block-order::after {
-    content: '';
+    content: "";
     border: 50px solid transparent;
     border-left: 10px solid #18a7d0;
     right: -60px;

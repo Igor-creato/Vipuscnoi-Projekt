@@ -215,12 +215,18 @@
         <div class="row row-pad row-pad-bot">
           <div class="col-md-6">
             <div class="block-img d-none-768">
+              <img class="block-img-img" src="./img/content/films.png" alt="" />
+            </div>
+            <!-- isumrud -->
+            <div class="position-small-isumrud">
               <img
-                class="block-img-img"
-                src="./img/content/films-izumrud.png"
+                src="./img/content/small-isumrud.png"
                 alt=""
+                class="rellax"
+                data-rellax-speed="2"
               />
             </div>
+            <!-- isumrud -->
             <div class="block-img d-none-b-768">
               <img class="block-img-img" src="./img/content/films.png" alt="" />
             </div>
@@ -274,9 +280,17 @@
             </div>
           </div>
         </div>
-        <div class="img-right-bg">
-          <img src="./img/content/small-rubin.png" alt="" />
+        <div class="position-small-rubin">
+          <img
+            src="./img/content/small-rubin.png"
+            alt=""
+            class="rellax"
+            data-rellax-speed="5"
+          />
         </div>
+        <!-- <div class="img-left-bg">
+          <img src="./img/content/small-isumrud.png" alt="" />
+        </div> -->
       </div>
     </section>
     <section class="content-2">
@@ -354,6 +368,94 @@
         </div>
       </div>
     </section>
+
+    <!-- content-3 -->
+    <section class="content-3">
+      <div class="container content-1-bg">
+        <div class="row row-pad row-pad-bot">
+          <div class="col-md-6">
+            <div class="block-img d-none-768">
+              <img
+                class="block-img-img"
+                src="./img/content-3/glass-iphone.png"
+                alt=""
+              />
+            </div>
+            <!-- isumrud -->
+            <div class="position-big-isumrud">
+              <img
+                src="./img/content-3/big-isumrud.png"
+                alt=""
+                class="rellax"
+                data-rellax-speed="2"
+              />
+            </div>
+            <!-- isumrud -->
+            <div class="block-img d-none-b-768">
+              <img
+                class="block-img-img"
+                src="./img/content-3/glass-iphone.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="block-icon">
+              <div class="block-icon-img">
+                <img src="./img/content-3/icon-boll.png" alt="" />
+              </div>
+              <div class="block-icon-content">
+                <h3>Симуляция экстремальных видов спорта</h3>
+
+                <p>
+                  Почувствуйте на себе эмоции от прыжка с парашютом или спуска
+                  на сноуборде со склона горы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-none-b-768">
+            <div class="block-img">
+              <img class="block-img-img" src="./img/content-3/mac.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="block-icon">
+              <div class="block-icon-img">
+                <img src="./img/content-3/icon-game.png" alt="" />
+              </div>
+              <div class="block-icon-content">
+                <h3>Играйте в игры с эффектом полного погружения!</h3>
+
+                <p>
+                  Полное погружение в игры на смартфоне, а так же на ПК через
+                  программу TRINUS.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-none-768">
+            <div class="block-img">
+              <img class="block-img-img" src="./img/content-3/mac.png" alt="" />
+            </div>
+            <div class="position-topaz">
+              <img
+                src="./img/content-3/topaz.png"
+                alt=""
+                class="rellax"
+                data-rellax-speed="5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="img-left-bg">
+          <img src="./img/content/small-isumrud.png" alt="" />
+        </div> -->
+      </div>
+    </section>
+    <!-- content-3 -->
+    <!-- popup -->
     <div class="popup">
       <div class="popup-content">
         <!-- <button class="popup-close"></button> -->
@@ -401,7 +503,16 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax");
+    </script>
   </body>
 </html>

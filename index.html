@@ -20,7 +20,11 @@
     <title>Очки виртуальной реальности</title>
   </head>
   <body>
-    <header class="head">
+    <header
+      class="head parallax-window"
+      data-parallax="scroll"
+      data-image-src="./img/top/top-bg.jpg"
+    >
       <div class="head-top">
         <div class="container h-100">
           <!-- Отображение на компьютерах -->
@@ -293,7 +297,11 @@
         </div> -->
       </div>
     </section>
-    <section class="content-2">
+    <section
+      class="content-2 parallax-window-2"
+      data-parallax="scroll"
+      data-image-src="./img/content-2/bg.jpg"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-6 row-pad row-pad-bot">
@@ -444,6 +452,7 @@
                 alt=""
                 class="rellax"
                 data-rellax-speed="5"
+                data-rellax-percentage="0.5"
               />
             </div>
           </div>
@@ -595,7 +604,14 @@
             <h2 class="content-5-h2">
               Виртуальная реальность <br />в очках vr box
             </h2>
-            <img src="./img/content-6/play-button.png" alt="" />
+
+            <img
+              class="popup-youtube-video"
+              youtubeid="WFPgc1SM1NY"
+              src="./img/content-6/play-button.png"
+              alt=""
+            />
+
             <p>Смотреть видео</p>
           </div>
         </div>
@@ -649,6 +665,7 @@
         </div>
       </div>
     </div>
+    <link rel="stylesheet" href="./css/grt-youtube-popup.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -656,10 +673,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
     <script src="./js/rellax.min.js"></script>
-    <script>
-      var rellax = new Rellax(".rellax");
-    </script>
+    <script src="./js/grt-youtube-popup.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

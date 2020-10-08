@@ -284,10 +284,16 @@ textarea {
    width: 100%;
    margin-bottom: -11px;
 }
+.parallax-window,
+.parallax-window-2 {
+   height: 100%;
+   width: 100vw;
+   background: transparent;
+}
 
 .head {
-   background: @black url(../img/top/top-bg.jpg) center center no-repeat;
-   background-size: cover;
+   // background: @black url(../img/top/top-bg.jpg) center center no-repeat;
+   // background-size: cover;
    color: @white;
 
    &-small {
@@ -424,8 +430,8 @@ textarea {
 }
 
 .content-2 {
-   background: @black url(../img/content-2/bg.jpg) center center no-repeat;
-   background-size: cover;
+   // background: @black url(../img/content-2/bg.jpg) center center no-repeat;
+   // background-size: cover;
    color: @white;
 
    h3 {
@@ -575,14 +581,14 @@ textarea {
       position: absolute;
       display: inline-block;
       left: 4rem;
-      bottom: -40;
+      bottom: -400px;
    }
 
    &-topaz {
       z-index: 10;
       position: absolute;
       right: 2rem;
-      top: 400px;
+      top: 0;
    }
 
    &-big-rubin {
@@ -601,7 +607,9 @@ textarea {
    position: relative;
 }
 
-.popup {
+
+.popup,
+.popup-youtube {
    display: none;
    position: fixed;
    left: 0;
@@ -643,7 +651,8 @@ textarea {
    border: 3px solid @icon-color;
 }
 
-.popup-btn {
+.popup-btn,
+.popup-youtube-video {
    &:hover {
       cursor: pointer;
    }

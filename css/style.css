@@ -225,9 +225,13 @@ textarea {
   width: 100%;
   margin-bottom: -11px;
 }
+.parallax-window,
+.parallax-window-2 {
+  height: 100%;
+  width: 100vw;
+  background: transparent;
+}
 .head {
-  background: #000000 url(../img/top/top-bg.jpg) center center no-repeat;
-  background-size: cover;
   color: #ffffff;
 }
 .head-small h2 {
@@ -334,8 +338,6 @@ textarea {
   position: relative;
 }
 .content-2 {
-  background: #000000 url(../img/content-2/bg.jpg) center center no-repeat;
-  background-size: cover;
   color: #ffffff;
 }
 .content-2 h3 {
@@ -456,13 +458,13 @@ textarea {
   position: absolute;
   display: inline-block;
   left: 4rem;
-  bottom: -40;
+  bottom: -400px;
 }
 .position-topaz {
   z-index: 10;
   position: absolute;
   right: 2rem;
-  top: 400px;
+  top: 0;
 }
 .position-big-rubin {
   position: absolute;
@@ -475,7 +477,8 @@ textarea {
 .content-3 {
   position: relative;
 }
-.popup {
+.popup,
+.popup-youtube {
   display: none;
   position: fixed;
   left: 0;
@@ -487,7 +490,8 @@ textarea {
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.8);
 }
-.popup-content {
+.popup-content,
+.popup-youtube-content {
   color: #ffffff;
   position: fixed;
   left: 50%;
@@ -496,7 +500,8 @@ textarea {
   transform: translateX(-50%);
   min-width: auto;
 }
-.popup-close {
+.popup-close,
+.popup-youtube-close {
   position: absolute;
   top: -15px;
   right: -15px;
@@ -513,7 +518,8 @@ textarea {
   margin-bottom: 0;
   border: 3px solid #18a7d0;
 }
-.popup-btn:hover {
+.popup-btn:hover,
+.popup-youtube-video:hover {
   cursor: pointer;
 }
 @media (max-width: 1200px) {

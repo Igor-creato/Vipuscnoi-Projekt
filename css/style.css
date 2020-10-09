@@ -225,13 +225,8 @@ textarea {
   width: 100%;
   margin-bottom: -11px;
 }
-.parallax-window,
-.parallax-window-2 {
-  height: 100%;
-  width: 100vw;
-  background: transparent;
-}
 .head {
+  background-color: #000000;
   color: #ffffff;
 }
 .head-small h2 {
@@ -343,6 +338,9 @@ textarea {
 .content-2 h3 {
   font-size: 1rem;
 }
+.content-3 {
+  background-color: #fcfcf6;
+}
 .content-4 {
   position: relative;
   background: #fcfcf6 url(../img/content-4/bg.png) top right no-repeat;
@@ -379,10 +377,48 @@ textarea {
   font-size: 17px;
 }
 .content-6 {
-  background: #000000 url(../img/content-6/bg.png) center center no-repeat;
-  background-size: cover;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
+}
+.content-7 {
+  background-color: #fcfcf6;
+}
+.content-7-image {
+  display: block;
+  margin: auto;
+}
+.content-7-icon {
+  padding: 20px 10px;
+}
+.content-7-icon-win {
+  padding-left: 0;
+}
+.content-8 {
+  background-color: #fcfcf6;
+}
+.content-8-pad-0 {
+  padding: 0;
+}
+.content-8-block {
+  padding: 24px;
+  border: 1px solid #18a7d0;
+  border-radius: 3px;
+  margin: 6px;
+  background-color: #ffffff;
+}
+.content-8-block-pad {
+  margin-top: 60px;
+}
+.content-9 {
+  background-color: #fcfcf6;
+}
+.content-9-img {
+  width: 150px;
+  height: 139px;
+}
+.content-9-txt {
+  padding: 20px;
 }
 .circle-border {
   background-color: #ffffff;
@@ -460,6 +496,11 @@ textarea {
   left: 4rem;
   bottom: -400px;
 }
+.position-big-isumrud-2 {
+  position: absolute;
+  top: -130px;
+  right: -130px;
+}
 .position-topaz {
   z-index: 10;
   position: absolute;
@@ -470,6 +511,13 @@ textarea {
   position: absolute;
   right: -1rem;
   bottom: -500px;
+}
+.position-big-bot-rubin {
+  position: absolute;
+  left: -4rem;
+  bottom: -200px;
+  width: 147px;
+  height: 133px;
 }
 .content-1 {
   position: relative;
@@ -521,6 +569,13 @@ textarea {
 .popup-btn:hover,
 .popup-youtube-video:hover {
   cursor: pointer;
+}
+.parallax-window,
+.parallax-window-2,
+.parallax-window-3 {
+  height: 100%;
+  width: 100vw;
+  background: transparent;
 }
 @media (max-width: 1200px) {
   .what-body img {
@@ -632,6 +687,9 @@ textarea {
   padding-left: 15px;
 }
 @media (max-width: 576px) {
+  .content-8-pad-0 {
+    padding: 0 20px;
+  }
   .row-pad {
     padding-top: 50px;
   }

@@ -332,10 +332,12 @@ textarea {
 .content-1-bg {
   position: relative;
 }
-.content-2 {
+.content-2,
+.content-10 {
   color: #ffffff;
 }
-.content-2 h3 {
+.content-2 h3,
+.content-10 h3 {
   font-size: 1rem;
 }
 .content-3 {
@@ -515,7 +517,7 @@ textarea {
 .position-big-bot-rubin {
   position: absolute;
   left: -4rem;
-  bottom: -200px;
+  bottom: -500px;
   width: 147px;
   height: 133px;
 }

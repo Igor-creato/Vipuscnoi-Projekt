@@ -26,6 +26,9 @@ $('.parallax-window-2').parallax({
 $('.parallax-window-3').parallax({
   imageSrc: './img/content-6/bg.jpg'
 });
+$('.parallax-window-4').parallax({
+  imageSrc: './img/content-10/bg.jpg'
+});
 // paralax bg
 
 
